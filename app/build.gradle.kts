@@ -57,16 +57,16 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.google.mlkit:text-recognition:16.0.0")
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation(libs.text.recognition)
     // ViewModel
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     // ViewModel utilities for Compose
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7")
-    implementation("androidx.camera:camera-camera2:1.4.1") // Replace with the latest version
-    implementation("androidx.camera:camera-view:1.4.1") // Replace with the latest version
-    implementation("androidx.camera:camera-lifecycle:1.4.1") // Replace with the latest version
-    implementation ("com.google.android.gms:play-services-mlkit-text-recognition:19.0.1")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
+    implementation(libs.androidx.lifecycle.viewmodel.compose.android)
+    implementation(libs.androidx.camera.camera2) // Replace with the latest version
+    implementation(libs.androidx.camera.view) // Replace with the latest version
+    implementation(libs.androidx.camera.lifecycle) // Replace with the latest version
+    implementation (libs.play.services.mlkit.text.recognition)
+    implementation (libs.kotlinx.coroutines.play.services)
 }
