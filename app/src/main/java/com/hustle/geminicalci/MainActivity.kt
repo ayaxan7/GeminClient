@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             GeminiCalciTheme {
                 Scaffold(modifier = Modifier.fillMaxSize().padding(16.dp)) { innerPadding ->
-                    CalculatorScreen()
+                    NavController()
                 }
             }
         }
